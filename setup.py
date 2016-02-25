@@ -38,4 +38,4 @@ setup(name             = 'pyMiniCircuits',
       license          = 'BSD',
       packages         = ['minicircuits'],
       scripts          = ['mini-attenuator'],
-      install_requires = ['pyusb>=1.0', 'blinkstick'])
+      install_requires = ['pyusb>=1.0.rc1', 'blinkstick'])
