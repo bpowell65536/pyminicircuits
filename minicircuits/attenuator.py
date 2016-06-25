@@ -1,6 +1,6 @@
 # Copyright (c) 2015, Spire Global Inc
 # All rights reserved.
-# 
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
 #     * Redistributions of source code must retain the above copyright
@@ -11,7 +11,7 @@
 #     * Neither the name of the Spire Global Inc nor the
 #       names of its contributors may be used to endorse or promote products
 #       derived from this software without specific prior written permission.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 # "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 # LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
@@ -98,7 +98,7 @@ class DigitalAttenuator(object):
         return tmp[1] + tmp[2]/4.0
 
     def set_att(self, att):
-        cmd = [19, int(att), int((att % 1) / 4.0)]
+        cmd = [19, int(att), int((att % 1) * 4.0)]
         tmp = self._run_cmd(cmd, read_len=1)
 
     def _get_string(self, cmd):
