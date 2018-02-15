@@ -26,11 +26,13 @@
 # OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
+import pkg_resources
+
 __author__ = "Harrison Caudill"
 __copyright__ = "Copyright 2015, "
 __credits__ = ["Spire Global Inc"]
 __license__ = "BSD"
-__version__ = "0.1"
+__version__ = pkg_resources.get_distribution("pyMiniCircuits").version
 __maintainer__ = "Harrison Caudill"
 __email__ = "harrison@spire.com"
 __status__ = "Alpha"

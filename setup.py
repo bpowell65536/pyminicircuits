@@ -28,14 +28,14 @@
 # SUCH DAMAGE.
 
 from distutils.core import setup
-from minicircuits import __version__, __author__, __email__
+
 
 setup(name             = 'pyMiniCircuits',
-      version          = __version__,
+      version          = '0.1',
       description      = 'Python Interface to MiniCircuits Systems',
-      author           = __author__,
-      author_email     = __email__,
+      author           = 'Harrison Caudill',
+      author_email     = 'harrison@spire.com',
       license          = 'BSD',
       packages         = ['minicircuits'],
       scripts          = ['mini-attenuator'],
-      install_requires = ['pyusb>=1.0.rc1', 'blinkstick'])
+      install_requires = ['pyusb>=1.0.rc1'])
